@@ -31,7 +31,7 @@ This tutorial assumes you already completed all the prior lessons on databases a
   ```
 5. Run the server using the script defined (using `nodemon`)
   ```shell
-  npm run dev
+  npm run debug
   ```
 6. Navigate to [http://localhost:9090/](http://localhost:9090/). You should see the login page.
   ![alt text](screens/login.png "Login page")

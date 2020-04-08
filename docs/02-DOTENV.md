@@ -29,8 +29,8 @@ module.exports = {
 Since we only installed this as a dev dependency, we're not using `require('dotenv')` to reduce the modules we load on runtime. To mitigate this and let this `config.js` go throuogh `dotenv`, we simply update the `scripts` in our [`package.json`](../package.json):
 ```json
 "scripts": {
-  "dev": "nodemon -r dotenv/config app.js",
-  "start": "node -r dotenv/config app.js"
+  "debug": "nodemon -r dotenv/config app.js",
+  "dev": "node -r dotenv/config app.js"
 },
 ```
 
