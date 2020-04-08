@@ -41,7 +41,7 @@ The application should be completely functional. If you completed the [`node-log
 
 Follow the instructions provided in each file below to reconfigure the application to use MongoDB Atlas and environment variables and deply the application.
 
-#### [`01-ATLAS.md`](docs/01-ALTAS.md)
+#### [`01-ATLAS.md`](docs/01-ATLAS.md)
 Goes through the steps to create a MongoDB Atlas Cluster and configuring access to the database.
 
 #### [`02-DOTENV.md`](docs/02-DOTENV.md)
