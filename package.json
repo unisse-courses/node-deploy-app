@@ -4,8 +4,8 @@
   "description": "A simple user blog app",
   "main": "index.js",
   "scripts": {
-    "debug": "nodemon -r dotenv/config app.js",
-    "dev": "node -r dotenv/config app.js",
+    "debug": "nodemon app.js",
+    "dev": "node app.js",
     "start": "node app.js"
   },
   "keywords": [],
