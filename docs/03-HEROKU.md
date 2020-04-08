@@ -70,7 +70,13 @@ By default, you can simply run `heroku create` and Heroku will give a random nam
 Go to your [Heroku Dashboard](https://dashboard.heroku.com/apps) to see the created app.
 ![alt text](../screens/heroku-created-app.png "Heroku App created!!")
 
-When you create an app, a git remote (called `heroku`) is also created and associated with your local git repository. To deploy the application, simply push the code to the `heroku` branch:
+When you create an app, a git remote (called `heroku`) is also created and associated with your local git repository. Before pushing any changes to the `heroku` remote branch, make sure all changes are commited first.
+```shell
+git add .
+git commit -m 'Update code for deployment'
+```
+
+To deploy the application, simply push the code to the `heroku` branch:
 ```shell
 git push heroku master
 ```
@@ -105,3 +111,15 @@ Let's do the second option. Go to the **`Settings`** tab of your application and
 
 Use the `.env` file created previously to create the config vars. No need for the quotes, just paste the values and make sure to click **Add**.
 ![alt text](../screens/heroku-config-vars-added.png).
+
+Once that's set up, try refreshing the page or run:
+```shell
+heroku open
+```
+
+You can also test if the code works locally, by running:
+```shell
+heroku local web
+```
+
+This will simply get the values from the local `.env` file and whatever's in the current repository. To ensure that changes get deployed, do not forget to **COMMIT** the changes to the code.
