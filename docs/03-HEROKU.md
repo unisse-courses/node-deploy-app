@@ -123,3 +123,5 @@ heroku local web
 ```
 
 This will simply get the values from the local `.env` file and whatever's in the current repository. To ensure that changes get deployed, do not forget to **COMMIT** the changes to the code.
+
+That's it! You now have a fully deployed application on Heroku!
