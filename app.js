@@ -40,7 +40,7 @@ app.engine('hbs', exphbs({
     // usage {{dateFormat creation_date format="MMMM YYYY"}}
     dateFormat: function(context, block) {
       var f = block.hash.format || "MMMM DD YYYY, h:mm a";
-      return moment(Date(context), "YYYY-MM-DDTHH:mm:ss.SSSZ").format(f);
+      return moment(new Date(context), "YYYY-MM-DDTHH:mm:ss.SSSZ").format(f);
     }
   }
 }));
